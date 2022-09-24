@@ -17,5 +17,5 @@ jobs:
       - name: python commamnds
         run: 
           import platform
-          print (platform.processor())
+          print(platform.processor())
         shell: python
