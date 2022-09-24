@@ -9,8 +9,14 @@ jobs:
       - name: print a string
         run: echo " my name is sasank "
 
-        
+
       - name: multiline script
         run: |
           node -v
-          npm -vgit
+          npm -v
+
+      - name: python commamnds
+        run: 
+          import platform
+          print (platform.processor())
+        shell: python
