@@ -3,8 +3,8 @@ name: actions workflow
 on: [push]
 
 jobs:
-  run-git-actions:
-    run-on: ubuntu-latest
+  run-github-actions:
+    runs-on: ubuntu-latest
     steps:
       - name: trigger actions
         id: greet
