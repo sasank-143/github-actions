@@ -12,4 +12,4 @@ jobs:
       - name: multiline script
         run: |
           node -v
-          npm -vgit
+          npm -v
