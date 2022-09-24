@@ -6,6 +6,20 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: display files
+        run: |
+           echo $GITHUB_SHA
+           echo $GITHUB_REPOSITORY
+           echo $GITHUB_WORKSPACE
+           echo "${{ github.token }}"
+           pwd
+           ls -a
+      - name: github checkout
+        uses: actions/checkout@v3
+      - name: displaying files after checkout
+        run: |
+           pwd
+           ls -a
       - name: trigger actions
         id: greet
         uses: actions/hello-world-javascript-action@v1.1
