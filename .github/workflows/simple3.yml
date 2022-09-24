@@ -1,0 +1,12 @@
+name: running scripts
+
+on: [push, pull_request]
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+    - name: multiline script
+      run: |
+        node -v
+        npm -v
