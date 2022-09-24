@@ -1,0 +1,15 @@
+name: shell commamnds
+
+on: [push]
+
+jobs: 
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: eccgitho a string
+        run: eccho " my name is sasank "
+      
+      - name: multiline script
+        run: |
+          node -v
+          npm -vgit
