@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: eccgitho a string
-        run: eccho " my name is sasank "
+        run: echo " my name is sasank "
       
       - name: multiline script
         run: |
