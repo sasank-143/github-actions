@@ -1,6 +1,8 @@
 name: actions workflow
 
-on: [push]
+on:
+  repository_dispatch:
+    types: [build]
 
 jobs:
   run-github-actions:
