@@ -1,0 +1,16 @@
+name: creating and setting up a node-version
+
+on: push
+
+jobs:
+  node-version:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: creating a node
+        run: node -v
+        uses: actions/setup-node@v1
+        with:
+            node-version: 6
+      - name: craete  a log node
+        run: node -v
+  
