@@ -1,0 +1,15 @@
+name: creating container
+
+on: push
+
+jobs:
+  node-docker:
+    runs-on: ubuntu-latest
+    container: 
+      image: node:14-alpine3.15
+    steps:
+      - name: running a container
+        run: |
+          node -v
+          cat /etc/os-version
+      
