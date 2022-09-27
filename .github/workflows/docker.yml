@@ -11,5 +11,5 @@ jobs:
       - name: running a container
         run: |
           node -v
-          cat /etc/os-version
+          cat /etc/os-release
       
