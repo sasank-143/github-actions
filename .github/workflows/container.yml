@@ -10,18 +10,18 @@ jobs:
       - name: log node version
         run: node -v
       - name: Step with docker
-        uses: docker://node:12.14.1-alpine3.10
+        uses: docker://node:alpine:3.16.2 
         with:
           entrypoint: "/bin/echo"
           args: "Hello World"
       - name: Log node version
-        uses: docker://node:12.14.1-alpine3.10
+        uses: docker://node:alpine:3.16.2 
         with:
           entrypoint: /usr/local/bin/node
           args: -v
       - uses: actions/checkout@v1
       - name: Run a script
-        uses: docker://node:12.14.1-alpine3.10
+        uses: docker://node:alpine:3.16.2 
         with:
           entrypoint: ./script.sh
           args: "Some string"
