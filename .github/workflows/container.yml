@@ -20,13 +20,12 @@ jobs:
           entrypoint: /usr/local/bin/node
           args: -v
       - uses: actions/checkout@v1
-      
+
       - name: Run a script
         uses: docker://node:16.17.1-alpine3.16
         with:
           entrypoint: ./script.sh
           args: "Some string"
-
       - name: send a slack message
         uses: docker://technosophos/slack-notify
         env:
